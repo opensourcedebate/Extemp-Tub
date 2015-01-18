@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>OpenSourceDebate</groupId>
+  <artifactId>Extemp-Tub</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Extemp-Tub</name>
+  <description>An Open Source Platform for Automated Retrieval, Collection, and Sorting of News Articles for Usage in Extemporaneous Speaking Competitions</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.json</groupId>
+  		<artifactId>json</artifactId>
+  		<version>20141113</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.xhtmlrenderer</groupId>
+  		<artifactId>flying-saucer-pdf</artifactId>
+  		<version>9.0.7</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.xhtmlrenderer</groupId>
+  		<artifactId>flying-saucer-core</artifactId>
+  		<version>9.0.7</version>
+  	</dependency>
+  </dependencies>
+  <url>https://github.com/opensourcedebate/Extemp-Tub.git</url>
+</project>
