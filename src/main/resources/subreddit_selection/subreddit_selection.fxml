@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opensourcedebate.extemp_tub.ui_controllers.SubredditSelectionController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <Accordion minHeight="340.0" prefHeight="440.0" prefWidth="153.0" scaleShape="false" style="-fx-background-color: silver;" BorderPane.alignment="CENTER">
+        <panes>
+          <TitledPane animated="false" style="-fx-background-color: silver;" text="International/Foreign">
+               <content>
+                  <Accordion>
+                    <panes>
+                      <TitledPane animated="false" text="Middle East">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: silver;">
+                                 <children>
+                                    <CheckBox id="MidEastRegionalWar" fx:id="MidEastRegionalWar" mnemonicParsing="false" onAction="#subredditSelected" text="/r/MidEastRegionalWar" />
+                                    <CheckBox id="SyrianCivilWar" fx:id="SyrianCivilWar" mnemonicParsing="false" onAction="#subredditSelected" text="/r/SyrianCivilWar" />
+                                    <CheckBox id="LevantineWar" fx:id="LevantineWar" mnemonicParsing="false" onAction="#subredditSelected" text=" /r/LevantineWar" />
+                                    <CheckBox id="MiddleEastNews" fx:id="MiddleEastNews" layoutX="15.0" layoutY="59.0" mnemonicParsing="false" onAction="#subredditSelected" text="/r/MiddleEastNews" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                      </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="Africa">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: silver;">
+                                 <children>
+                                    <CheckBox id="Africa" fx:id="Africa" mnemonicParsing="false" onAction="#subredditSelected" text="/r/Africa" />
+                                    <CheckBox id="SouthAfrica" fx:id="SouthAfrica" mnemonicParsing="false" onAction="#subredditSelected" text="/r/southafrica" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="185.0" text="Europe">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: silver;">
+                                 <children>
+                                    <CheckBox id="Europe" fx:id="Europe" mnemonicParsing="false" onAction="#subredditSelected" text="/r/europe" />
+                                    <CheckBox id="Europeans" fx:id="Europeans" mnemonicParsing="false" onAction="#subredditSelected" text="/r/Europeans" />
+                                    <CheckBox id="EuropeanFederalists" fx:id="EuropeanFederalists" mnemonicParsing="false" onAction="#subredditSelected" text="/r/EuropeanFederalists" />
+                                    <CheckBox id="Euroskeptics" fx:id="Euroskeptics" mnemonicParsing="false" onAction="#subredditSelected" text="/r/eurosceptics" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="185.0" text="Asia">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: silver;">
+                                 <children>
+                                    <CheckBox id="Asia" fx:id="Asia" mnemonicParsing="false" onAction="#subredditSelected" text="/r/asia">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin></CheckBox>
+                                    <CheckBox id="China" fx:id="China" mnemonicParsing="false" onAction="#subredditSelected" text="/r/China">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin></CheckBox>
+                                    <CheckBox id="India" fx:id="India" mnemonicParsing="false" onAction="#subredditSelected" text="/r/India">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin></CheckBox>
+                                    <CheckBox id="Japan" fx:id="Japan" mnemonicParsing="false" onAction="#subredditSelected" text="/r/Japan">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin></CheckBox>
+                                    <CheckBox id="Korea" fx:id="Korea" layoutX="15.0" layoutY="81.0" mnemonicParsing="false" onAction="#subredditSelected" text="/r/Korea">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin></CheckBox>
+                                    <CheckBox id="Phillipines" fx:id="Phillipines" layoutX="15.0" layoutY="103.0" mnemonicParsing="false" onAction="#subredditSelected" text="/r/Phillipines">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin></CheckBox>
+                                    <CheckBox id="Taiwan" fx:id="Taiwan" layoutX="15.0" layoutY="125.0" mnemonicParsing="false" onAction="#subredditSelected" text="/r/Taiwan">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin></CheckBox>
+                                    <CheckBox id="Vietnam" fx:id="Vietnam" layoutX="15.0" layoutY="147.0" mnemonicParsing="false" onAction="#subredditSelected" text="/r/Vietnam">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin></CheckBox>
+                                    <CheckBox id="SriLanka" fx:id="SriLanka" layoutX="15.0" layoutY="169.0" mnemonicParsing="false" onAction="#subredditSelected" text="/r/SriLanka">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin></CheckBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="185.0" text="North America">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: silver;">
+                                 <children>
+                                    <CheckBox id="CanadaPolitics" fx:id="CanadaPolitics" mnemonicParsing="false" onAction="#subredditSelected" text="/r/CanadaPolitics" />
+                                    <CheckBox id="Canada" fx:id="Canada" mnemonicParsing="false" onAction="#subredditSelected" text="/r/canada" />
+                                    <CheckBox id="CanadaNews" fx:id="CanadaNews" mnemonicParsing="false" onAction="#subredditSelected" text="/r/CanadaNews" />
+                                    <CheckBox id="Mexico" fx:id="Mexico" mnemonicParsing="false" onAction="#subredditSelected" text="/r/mexico" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="185.0" text="South America">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: silver;">
+                                 <children>
+                                    <CheckBox id="SouthAmerica" fx:id="SouthAmerica" mnemonicParsing="false" onAction="#subredditSelected" text="/r/SouthAmerica" />
+                                    <CheckBox id="SouthAmerican" fx:id="SouthAmerican" mnemonicParsing="false" onAction="#subredditSelected" text="/r/southamerican" />
+                                    <CheckBox id="LatinAmerica" fx:id="LatinAmerica" mnemonicParsing="false" onAction="#subredditSelected" text="/r/LatinAmerica" />
+                                    <CheckBox id="LATO" fx:id="LATO" mnemonicParsing="false" onAction="#subredditSelected" text="/r/LATO" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="210.0" text="Central America">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: silver;">
+                                 <children>
+                                    <CheckBox id="CentralAmerica" fx:id="CentralAmerica" mnemonicParsing="false" onAction="#subredditSelected" text="/r/centralamerica" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="185.0" style="-fx-background-color: silver;" text="Oceania">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: silver;">
+                                 <children>
+                                    <CheckBox id="Australia" fx:id="Australia" mnemonicParsing="false" onAction="#subredditSelected" text="/r/Australia" />
+                                    <CheckBox id="AusFinance" fx:id="AusFinance" mnemonicParsing="false" onAction="#subredditSelected" text="/r/AusFinance" />
+                                    <CheckBox id="NewZealand" fx:id="NewZealand" mnemonicParsing="false" onAction="#subredditSelected" text="/r/newzealand" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+               </content>
+          </TitledPane>
+          <TitledPane animated="false" style="-fx-background-color: silver;" text="Domestic">
+               <content>
+                  <Accordion>
+                    <panes>
+                      <TitledPane animated="false" text="Economy">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: silver;">
+                                 <children>
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                      </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="Politics">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: silver;">
+                                 <children>
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="210.0" text="Health Care">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: silver;">
+                                 <children>
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="235.0" text="Education">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: silver;">
+                                 <children>
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="260.0" text="State Government">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: silver;">
+                                 <children>
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="285.0" text="Federal Government">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: silver;">
+                                 <children>
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="310.0" text="Technology">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: silver;">
+                                 <children>
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="185.0" style="-fx-background-color: silver;" text="Environment">
+                           <content>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: silver;">
+                                 <children>
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                    <CheckBox mnemonicParsing="false" text="CheckBox" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+               </content>
+          </TitledPane>
+        </panes>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </Accordion>
+   </left>
+   <center>
+      <Pane fx:id="main_content_pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="342.0" prefWidth="447.0" text="Use the Drawers to Select which Subreddits to scan for Extemp Articles." wrapText="true">
+               <padding>
+                  <Insets left="25.0" right="25.0" top="25.0" />
+               </padding></Label>
+            <TextArea id="selected_subreddits_content_box" fx:id="selected_subreddits_content_box" layoutX="59.0" layoutY="197.0" prefHeight="129.0" prefWidth="318.0" promptText="[Selected Subreddits]" wrapText="true" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </Pane>
+   </center>
+   <bottom>
+      <Pane prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER_RIGHT">
+         <children>
+            <Button contentDisplay="RIGHT" layoutX="536.0" layoutY="2.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" text="Continue" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets right="100.0" />
+         </padding>
+      </Pane>
+   </bottom>
+</BorderPane>

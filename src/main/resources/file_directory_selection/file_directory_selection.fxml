@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opensourcedebate.extemp_tub.ui_controllers.FileDirectorySelectionController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <Pane fx:id="main_content_pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="77.0" layoutY="-118.0" prefHeight="342.0" prefWidth="447.0" text="Select a File Directory to Store Collected Articles." wrapText="true">
+               <padding>
+                  <Insets left="25.0" right="25.0" top="25.0" />
+               </padding></Label>
+            <Button fx:id="OpenFileNavigation" layoutX="416.0" layoutY="170.0" mnemonicParsing="false" onAction="#fileNavigation" text="Open File Navigation" />
+            <TextArea fx:id="FileDirectoryInput" layoutX="143.0" layoutY="125.0" prefHeight="70.0" prefWidth="266.0" promptText="Format: C:\Users\Username\Documents\Extemp-Tub" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </Pane>
+   </center>
+   <bottom>
+      <Pane prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER_RIGHT">
+         <children>
+            <Button fx:id="Continue" contentDisplay="RIGHT" layoutX="536.0" layoutY="2.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#onContinue" text="Continue" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets right="100.0" />
+         </padding>
+      </Pane>
+   </bottom>
+</BorderPane>
