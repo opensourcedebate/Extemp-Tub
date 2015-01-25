@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-	private Stage primaryStage;
+	private static Stage primaryStage;
 	
 	public static void main(String[] args) {
 		launch(args);
@@ -32,7 +32,7 @@ public class Main extends Application {
 		
 	}
 
-	public Stage getPrimaryStage() {
+	public static Stage getPrimaryStage() {
         return primaryStage;
     }
 }

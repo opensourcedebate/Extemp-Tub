@@ -25,7 +25,7 @@
    <center>
       <Pane fx:id="main_content_pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="77.0" layoutY="-118.0" prefHeight="342.0" prefWidth="447.0" text="Select a File Directory to Store Collected Articles." wrapText="true">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="-94.0" prefHeight="342.0" prefWidth="447.0" text="Select a File Directory to Store Collected Articles." wrapText="true">
                <padding>
                   <Insets left="25.0" right="25.0" top="25.0" />
                </padding></Label>
