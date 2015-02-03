@@ -1,9 +1,6 @@
 package opensourcedebate.extemp_tub.main;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.InputStream;
-
+import opensourcedebate.extemp_tub.config.Configuration;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -16,14 +13,23 @@ public class Main extends Application {
 	
 	public static void main(String[] args) {
 		launch(args);
-
+		
 	}
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		this.primaryStage = primaryStage;
-		Parent root = FXMLLoader.load(getClass().getResource("/file_directory_selection/file_directory_selection.fxml"));
-	    
+		new Configuration();
+		
+		Main.primaryStage = primaryStage;
+		Parent root;
+		
+		Configuration configuration = new Configuration();
+		if (configuration.getDirectory().isEmpty()) {
+			root = FXMLLoader.load(getClass().getResource("/file_directory_selection/file_directory_selection.fxml"));
+		} else {
+			root = FXMLLoader.load(getClass().getResource("/subreddit_selection/subreddit_selection.fxml"));
+		}
+		
         Scene scene = new Scene(root);
     
         primaryStage.setTitle("Extemp-Tub");

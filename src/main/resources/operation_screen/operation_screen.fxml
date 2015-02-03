@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opensourcedebate.extemp_tub.ui_controllers.OperationScreenController">
+   <center>
+      <SplitPane dividerPositions="0.2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <items>
+            <HBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="200.0">
+               <children>
+                  <TreeView fx:id="tree_view" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <Pane prefWidth="500.0">
+               <children>
+                  <Group fx:id="node_group" layoutX="106.0" layoutY="46.0" />
+               </children>
+            </Pane>
+        </items>
+      </SplitPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" maxHeight="30.0" prefHeight="30.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToggleButton fx:id="process_toggle_button" alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#processToggle" text="Start" textAlignment="CENTER" />
+            <Pane prefHeight="200.0" prefWidth="130.0" />
+            <TextField fx:id="current_process_text" editable="false" prefWidth="200.0">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </TextField>
+            <ProgressBar fx:id="current_process_indicator" prefWidth="200.0" progress="0.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ProgressBar>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

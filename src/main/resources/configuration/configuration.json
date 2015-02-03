@@ -1,0 +1,55 @@
+{
+    "database_created": "false",
+    "database_name": "ExtempTubDB",
+    "default_subreddits": [
+        {"foreign": [
+            {"Middle East": [
+                "MidEastRegionalWar",
+                "SyrianCivilWar",
+                "LevantineWar",
+                "MiddleEastNews"
+            ]},
+            {"Africa": [
+                "Africa",
+                "southafrica"
+            ]},
+            {"Europe": [
+                "europe",
+                "Europeans",
+                "EuropeanFederalists",
+                "euroskeptics"
+            ]},
+            {"Asia": [
+                "asia",
+                "China",
+                "India",
+                "Japan",
+                "Korea",
+                "Phillipines",
+                "Taiwan",
+                "Vietnam",
+                "SriLanka"
+            ]},
+            {"North America": [
+                "CanadaPolitics",
+                "canada",
+                "CanadaNews",
+                "mexico"
+            ]},
+            {"South America": [
+                "SouthAmerica",
+                "southamerican",
+                "LatinAmerica",
+                "LATO"
+            ]},
+            {"Central America": ["centralamerica"]},
+            {"Oceania": [
+                "Australia",
+                "AusFinance",
+                "newzealand"
+            ]}
+        ]},
+        {"domestic": []}
+    ],
+    "directory": ""
+}
